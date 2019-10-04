@@ -11,7 +11,7 @@ class TestQuadraticSolver(unittest.TestCase):
 
     ##Tests if the correct value is returned when the quadratic coefficient is zero (and the linear coefficient isn't)
     def test_zero_a(self):
-        self.assertListEqual(quadratic_solver(0, 1, 2), [2])
+        self.assertListEqual(quadratic_solver(0, 1, 2), [-2])
 
     ##Tests that a single (correct) root is returned when the disriminant is zero
     def test_single_root(self):

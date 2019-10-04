@@ -18,7 +18,7 @@ def quadratic_solver(a, b, c, complex_allowed=False):
             raise ValueError("Both 'a' and 'b' were zero, meaning there was no defined value for 'x'")
         else:
             ##If the quadratic coefficient is zero, return the constant divided by the linear coefficient
-            return([c/b])
+            return([-c/b])
 
     ##@var discriminant (float) The discriminant of the equation
     discriminant=b**2-4*a*c
